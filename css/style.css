@@ -10,11 +10,11 @@
 html{
 box-sizing: border-box;
 }
-*,
+/* *,
 *::before,
 *::after {
 box-sizing: inherit;
-}
+} */
 
 
 body{
@@ -26,6 +26,7 @@ body{
 
 /* Лого */
 .logo{
+   display: block;
     color: var(--primary-text-color);
     font-family: Raleway,sans-serif;
     font-weight: 700;
@@ -41,23 +42,73 @@ body{
 
 
 /* Site-nav */
-.link{
+
+.site-nav{
+    list-style: none;
+    display: flex;
+    margin-left: 93px;
+   
+}
+.site-nav .link{
+    padding-top: 32px;
+    padding-bottom: 32px;
+   display: block;
+
     color: var(--primary-text-color);
     font-weight: 500;
     font-size: 14px;
     line-height: 1.07;
     letter-spacing: 0.02em;
-
     text-decoration: none;
+    
+}
 
+.site-nav .item + .item {
+    margin-left: 50px;
 }
-.site-nav{
-    list-style: none;
-}
+
 /* site-nav hover */
 .site-nav .link:hover, 
 .site-nav .link:focus{
     color:#2196F3;
+}
+
+
+/*основной цвет contact*/
+.contact-items .item {
+    color: var(--title-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    
+    
+}
+.contact-items{
+    display: flex;
+    list-style: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    
+}
+.contact-items .item + .item{
+    margin-left: 50px;
+}
+
+
+.contact-items .item:hover,
+.contact-items .item:focus{
+  color: #2196F3;
+}
+/* Общий дисплей флекс*/
+.main-nav{
+display: flex;
+align-items: center;
+
+
+
 }
 
 /* Нero*/
@@ -86,27 +137,7 @@ body{
 
 
 
-/*основной цвет contact*/
-.contact-items .item {
-    color: var(--title-text-color);
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    text-decoration: none;
-    
-}
-.contact-items{
-    list-style: none;
-    margin-top: 0;
-    margin-bottom: 0;
-}
 
-
-.contact-items .item:hover,
-.contact-items .item:focus{
-  color: #2196F3;
-}
 
 
 /* footer aside*/
@@ -151,6 +182,9 @@ body{
     margin-top: 0;
     margin-bottom: 0;
     list-style: none;
+    display: flex;
+    
+   
 }
 
 
@@ -264,14 +298,12 @@ body{
   
 }
 
-.btn:hover, 
-.btn:focus {
+.btn:hover,
+.btn:focus{
 background-color: black;
 color: white;
-
-
 }
-   
+
 
 
 /* Кнопки портфолио*/
@@ -311,7 +343,7 @@ color: white;
 
 /*контейнер heder*/
 .container{
-    width: 1200px;
+    width: 1230px;
     padding-left: 15px;
     padding-right: 15px;
     outline: 2px solid tomato;
