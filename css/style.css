@@ -122,6 +122,7 @@ align-items: center;
     text-transform:uppercase;
     margin-top: 0;
     margin-bottom: 30px;
+  
     
 }
 
@@ -130,7 +131,7 @@ align-items: center;
     padding-top: 200px;
     padding-bottom: 200px;
     text-align: center;
-    outline: 2px solid tomato;
+   
   
 }
 
@@ -184,17 +185,22 @@ align-items: center;
 
 
 .feature-list{
-    margin-top: 0;
-    margin-bottom: 0;
+   
+    padding: 0;
+    margin: 0;
     list-style: none;
     display: flex;
-    flex-wrap: wrap;
+
+    margin-top: -30px;
+    margin-left: -30px ;
+    
    
  
 }
 .feature-list .item{
-    width: 270px;
-   
+   margin-top: 30px;
+   margin-left: 30px;
+   flex-basis: calc(100% / 4 - 30px);
    
   
    
@@ -246,27 +252,47 @@ align-items: center;
   
 }
 .our-team{
+    
+    padding: 0;
+    margin: 0;
     list-style: none;
     display: flex;
-    padding-top: 0;
- 
+    flex-wrap: wrap;
 
+    margin-left: -30px;
+    margin-top: -30px;
+}
+.our-team > .list {
+    flex-basis: calc(100% / 4 - 30px);
+    margin-top: 30px;
+    margin-left: 30px;
 }
 .team{
     padding-top: 94px;
     padding-bottom: 94px;
 }
 
-.us{
+.about-us{
+   
     list-style: none;
-    margin-bottom: 0;
+    margin:0;
+    padding: 0;
     display: flex;
-    width: 370px;
+
+    margin-left: -30px;
+    margin-top: -30px;
+
+
+
+}
+.about-us > .item {
+flex-basis: calc(100% / 3 - 30px);
+margin-top: 30px;
+margin-left: 30px;
 }
 
-.us .item + .item{
-    margin-left: 30px;
-}
+
+
 
 /* box-project padding*/
 .box-project{
@@ -384,21 +410,64 @@ color: white;
 
 /* card-set */
 .card-set{
-    outline: 1px solid tomato;
     padding: 0;
     margin: 0;
     list-style: none;
     display: flex;
     flex-wrap: wrap;
-    margin-top: -30px;
+
     margin-left: -30px;
+    margin-top: -30px;
+    
    
 }
-.cars-set > .item {
-    outline: 1px solid teal;
-    flex-basis: calc(100% / 3 -30px);
+.card-set > .list {
+    
+    flex-basis: calc(100% / 3 - 30px);
     margin-top: 30px;
     margin-left: 30px;
+
+  
+}
+.list > .text{
+    color: var(--title-text-color);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.89;
+    letter-spacing: 0.03em;
+    margin-top: 0;
+    margin-bottom: 0;
+  
+
+    padding-top: 4px;
+    padding-right: 24px;
+    padding-bottom: 20px;
+    padding-left: 24px;
+}
+.list > .title{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    margin-top: 0;
+    
+    padding-top: 20px;
+    padding-right: 24px;
+    padding-bottom: 4px;
+    padding-left: 24px;
+}
+
+
+
+
+
+
+
+
+/* Padding project*/
+.content-project {
+padding-top: 94px;
+padding-bottom: 94px;
 }
 
 /*контейнер общий*/
@@ -406,10 +475,10 @@ color: white;
     width: 1230px;
     padding-left: 15px;
     padding-right: 15px;
-    outline: 2px solid tomato;
+   
     margin-left: auto;
     margin-right: auto;
-    background-color: #ccc;
+    
     
    
 }
