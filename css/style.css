@@ -23,10 +23,21 @@ body{
   
 }
 
+/*контейнер общий*/
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+   outline: 1px solid tomato;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
 
 /* Лого */
 .logo{
-   display: block;
+    display: block;
     color: var(--primary-text-color);
     font-family: Raleway,sans-serif;
     font-weight: 700;
@@ -38,6 +49,19 @@ body{
 }
 .color {
     color: var(--accent-color);
+}
+/* Лого Футер*/
+.logo-footer{
+    display: block;
+    color: var(--secondary-color);
+    background-color: #212121;
+    font-family: Raleway,sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+
+    text-decoration: none;
 }
 
 
@@ -186,10 +210,11 @@ align-items: center;
 
 .feature-list{
    
-    padding: 0;
+    padding:0;
     margin: 0;
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
 
     margin-top: -30px;
     margin-left: -30px ;
@@ -217,6 +242,11 @@ align-items: center;
    margin-bottom: 0;
 
 }
+/* Padding feature*/
+.meta-feature {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 
 /* Заголовки Feature и About us */
 .heading {
@@ -237,27 +267,31 @@ align-items: center;
     line-height: 1.19;
     letter-spacing: 0.03em;  
     text-align: center;
-    margin-top: 30px;
-    margin-bottom: 10px;
+    
+    margin-top: 0;
+    margin-bottom: 0;
+    outline: 1px solid tomato;
 }
 
-.our-team .text {
+.our-team .subtitle {
     color: var(--title-text-color);
     font-weight: 400;
     font-size: 16px;
     line-height: 1.19;
     letter-spacing: 0.03em;  
     text-align: center;
+
+    margin-top: 10px;
     margin-bottom: 0;
   
 }
 .our-team{
-    
     padding: 0;
     margin: 0;
     list-style: none;
     display: flex;
     flex-wrap: wrap;
+    outline: 1px solid tomato;
 
     margin-left: -30px;
     margin-top: -30px;
@@ -266,14 +300,23 @@ align-items: center;
     flex-basis: calc(100% / 4 - 30px);
     margin-top: 30px;
     margin-left: 30px;
+    outline: 1px solid tomato;
 }
+
+.desc-content {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
 .team{
+    background-color: #F5F4FA;
     padding-top: 94px;
     padding-bottom: 94px;
 }
 
+
 .about-us{
-   
+   outline: 1px solid tomato;
     list-style: none;
     margin:0;
     padding: 0;
@@ -286,9 +329,9 @@ align-items: center;
 
 }
 .about-us > .item {
-flex-basis: calc(100% / 3 - 30px);
-margin-top: 30px;
-margin-left: 30px;
+ flex-basis: calc(100% / 3 - 30px);
+ margin-top: 30px;
+ margin-left: 30px;
 }
 
 
@@ -362,8 +405,8 @@ margin-left: 30px;
 
 .btn:hover,
 .btn:focus{
-background-color: black;
-color: white;
+ background-color: black;
+ color: white;
 }
 
 
@@ -410,6 +453,7 @@ color: white;
 
 /* card-set */
 .card-set{
+    outline: 1px solid tomato;
     padding: 0;
     margin: 0;
     list-style: none;
@@ -422,63 +466,59 @@ color: white;
    
 }
 .card-set > .list {
-    
+    outline: 1px solid tomato;
     flex-basis: calc(100% / 3 - 30px);
     margin-top: 30px;
     margin-left: 30px;
 
   
 }
-.list > .text{
+/* Паддинги катрочек портфолио*/
+.card-сontent {
+    padding-top: 20px;
+    padding-right: 24px;
+    padding-bottom: 20px;
+    padding-left: 24px;
+}
+
+/* Всем картинкам*/
+img {
+    display: block;
+    max-width: 100%;
+}
+.list  .text{
     color: var(--title-text-color);
     font-weight: 400;
     font-size: 16px;
     line-height: 1.89;
     letter-spacing: 0.03em;
-    margin-top: 0;
+    
+    margin-top: 4px;
     margin-bottom: 0;
-  
-
-    padding-top: 4px;
-    padding-right: 24px;
-    padding-bottom: 20px;
-    padding-left: 24px;
+    outline: 1px solid tomato;
 }
-.list > .title{
+
+.list  .title{
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
+
     margin-top: 0;
+    margin-bottom: 0;
     
-    padding-top: 20px;
-    padding-right: 24px;
-    padding-bottom: 4px;
-    padding-left: 24px;
 }
 
-
-
-
-
-
-
+.title{
+    outline: 1px solid tomato;
+}
+.text{
+    outline: 1px solid tomato;
+}
 
 /* Padding project*/
 .content-project {
-padding-top: 94px;
-padding-bottom: 94px;
+ padding-top: 94px;
+ padding-bottom: 94px;
 }
 
-/*контейнер общий*/
-.container{
-    width: 1230px;
-    padding-left: 15px;
-    padding-right: 15px;
-   
-    margin-left: auto;
-    margin-right: auto;
-    
-    
-   
-}
