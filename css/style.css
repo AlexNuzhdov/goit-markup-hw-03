@@ -28,7 +28,7 @@ body{
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
-   outline: 1px solid tomato;
+  
     margin-left: auto;
     margin-right: auto;
     
@@ -44,6 +44,7 @@ body{
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
+    margin-right: 93px;
 
     text-decoration: none;
 }
@@ -70,7 +71,10 @@ body{
 .site-nav{
     list-style: none;
     display: flex;
-    margin-left: 93px;
+    margin:0;
+    padding: 0;
+    
+   
    
 }
 .site-nav .link{
@@ -131,6 +135,7 @@ body{
 .main-nav{
 display: flex;
 align-items: center;
+border-bottom: 1px solid #ECECEC;
 
 
 
@@ -158,11 +163,11 @@ align-items: center;
    
   
 }
-
-    
-
-
-
+/* Паддинги футера*/
+.sidebar {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
 
 
 
@@ -175,17 +180,24 @@ align-items: center;
     line-height: 1.7;
     letter-spacing: 0.03em;
 
+    margin-top: 9px;
+
     text-decoration: none;
 }
 .aside{
     list-style: none;
-    margin-top: 0;
+    margin-top:  20px;
+    padding: 0;
+    margin-bottom: 0;
+   
 }
 
 .aside .item:hover,
 .aside .item:focus {
   color: #2196F3;
 }
+
+
 .colortext{
     background-color: var(--primary-text-color);
     color: var(--secondary-color);
@@ -270,7 +282,7 @@ align-items: center;
     
     margin-top: 0;
     margin-bottom: 0;
-    outline: 1px solid tomato;
+    
 }
 
 .our-team .subtitle {
@@ -291,7 +303,7 @@ align-items: center;
     list-style: none;
     display: flex;
     flex-wrap: wrap;
-    outline: 1px solid tomato;
+  
 
     margin-left: -30px;
     margin-top: -30px;
@@ -300,7 +312,7 @@ align-items: center;
     flex-basis: calc(100% / 4 - 30px);
     margin-top: 30px;
     margin-left: 30px;
-    outline: 1px solid tomato;
+   
 }
 
 .desc-content {
@@ -316,7 +328,7 @@ align-items: center;
 
 
 .about-us{
-   outline: 1px solid tomato;
+   
     list-style: none;
     margin:0;
     padding: 0;
@@ -453,12 +465,13 @@ align-items: center;
 
 /* card-set */
 .card-set{
-    outline: 1px solid tomato;
+    
     padding: 0;
     margin: 0;
     list-style: none;
     display: flex;
     flex-wrap: wrap;
+   
 
     margin-left: -30px;
     margin-top: -30px;
@@ -466,7 +479,7 @@ align-items: center;
    
 }
 .card-set > .list {
-    outline: 1px solid tomato;
+  
     flex-basis: calc(100% / 3 - 30px);
     margin-top: 30px;
     margin-left: 30px;
@@ -479,6 +492,8 @@ align-items: center;
     padding-right: 24px;
     padding-bottom: 20px;
     padding-left: 24px;
+
+    border: 1px solid #EEEEEE;
 }
 
 /* Всем картинкам*/
@@ -495,7 +510,7 @@ img {
     
     margin-top: 4px;
     margin-bottom: 0;
-    outline: 1px solid tomato;
+   
 }
 
 .list  .title{
@@ -509,12 +524,7 @@ img {
     
 }
 
-.title{
-    outline: 1px solid tomato;
-}
-.text{
-    outline: 1px solid tomato;
-}
+
 
 /* Padding project*/
 .content-project {
